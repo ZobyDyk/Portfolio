@@ -1,0 +1,91 @@
+/* Základní reset stylů */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5; /* Světlejší pozadí */
+    color: #333; /* Tmavší barva textu pro kontrast */
+}
+
+.navbar {
+    background-color: #ffffff; /* Bílá barva navigace */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Jemný stín pod navigací */
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.nav-menu li a:hover {
+    color: #007bff; /* Akcentní barva při najetí myši */
+}
+
+.section {
+    background-color: #ffffff; /* Bílé pozadí pro sekce */
+    margin: 20px 100px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3em;
+    color: #333;
+}
+
+.section-subtitle {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Při najetí myši se ikona zvětší */
+}
+
+/* Responzivní stylizace */
+@media screen and (max-width: 600px) {
+    .section {
+        margin: 20px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+}
